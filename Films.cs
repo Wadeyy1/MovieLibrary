@@ -6,7 +6,7 @@ using System.Data;
 
 namespace MovieLibrary
 {
-    internal class Films
+    class Films
     {
         public Films()
         {
@@ -40,11 +40,18 @@ namespace MovieLibrary
             adapter.InsertCommand.ExecuteNonQuery();
             conn.Close();
             conn.Dispose();
+        }
 
-            // The below code allows you to select * from table
+        public void AllFilms()
+        {
+             // The below code allows you to select * from table
 
-            /*sql = "SELECT * FROM dbo.Movies_DB";
-            command = new SqlCommand(sql,conn);        
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString =  "Data Source=DESKTOP-VPT1VQI\\SQLEXPRESS;Initial Catalog=TestDB;Integrated Security=true";
+
+            var sql = "SELECT * FROM dbo.Movies_DB";
+            SqlCommand command = new SqlCommand(sql,conn);  
+            conn.Open();      
             using (SqlDataReader reader = command.ExecuteReader())
             while (reader.Read())
             {
@@ -52,7 +59,8 @@ namespace MovieLibrary
                 Console.WriteLine(String.Format("{0} \t | {1} \t | {2}",
                 // call the objects from their index
                 reader[0], reader[1], reader[2]));
-            }*/
+            }
+            conn.Close();
         }
 
         public int count()
@@ -71,7 +79,7 @@ namespace MovieLibrary
 
             foreach(var nw in namesandratings)
             {
-                Console.WriteLine($"Film Name: {nw.Word} and it has a rating of: {nw.Number}/10");
+                Console.WriteLine($"Film Name: {nw.Word} and it has a rating of: {nw.Number}/10 has been added.");
             }
         }
     }
