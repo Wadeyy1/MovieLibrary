@@ -11,3 +11,10 @@ C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\obj\Debu
 C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\obj\Debug\netcoreapp3.1\MovieLibrary.dll
 C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\obj\Debug\netcoreapp3.1\MovieLibrary.pdb
 C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\obj\Debug\netcoreapp3.1\MovieLibrary.genruntimeconfig.cache
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jrwad\Documents\C# Projects\Movie Library Project\MovieLibrary\obj\Debug\netcoreapp3.1\MovieLibrary.csproj.CopyComplete

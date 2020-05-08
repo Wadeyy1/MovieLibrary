@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace MovieLibrary
 {
     class Program
@@ -16,18 +17,20 @@ namespace MovieLibrary
             while(!done)
             {       
                 Console.WriteLine("Please enter a film Name:");
-                var input = Console.ReadLine();
-                filmlib.AddFilm(input);
+                var FilmNameInput = Console.ReadLine();
+                filmlib.AddFilm(FilmNameInput);
 
                 Console.WriteLine("Please enter a film rating 1 - 10:");
-                input = Console.ReadLine();
-                var rating = double.Parse(input);
+                var RatingInput = Console.ReadLine();
+                var rating = double.Parse(RatingInput);
                 filmlib.AddFilmRating(rating);
+
+                filmlib.writetodb(FilmNameInput, rating);
                 
                 Console.WriteLine("Would you like to enter another film? y/n:");
-                input = Console.ReadLine();
+                FilmNameInput = Console.ReadLine();
 
-                if(input == "n")
+                if(FilmNameInput == "n")
                 {
                     done = true;
                     continue;
